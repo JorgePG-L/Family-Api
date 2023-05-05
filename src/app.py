@@ -95,6 +95,11 @@ def add_member():
     jackson_family.add_member(member)
     return jsonify(member)
 
+    
+#borrar
+
+
+
 @app.route('/member/<int:member_id>', methods=['DELETE'])
 def delete_member(member_id):
     member = jackson_family.delete_member(member_id)
